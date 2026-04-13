@@ -1,3 +1,7 @@
+<script lang="ts">
+	import '../app.css';
+</script>
+
 <svelte:head>
 	<title>Prueba Lectiva</title>
 	<meta
@@ -6,27 +10,13 @@
 	/>
 </svelte:head>
 
-<div class="app-shell">
+<div class="relative min-h-screen overflow-x-hidden">
+	<div
+		class="pointer-events-none fixed left-[-4rem] top-20 h-56 w-56 rounded-full bg-[rgba(123,156,245,0.18)] blur-3xl"
+	></div>
+	<div
+		class="pointer-events-none fixed right-[-3rem] top-80 h-44 w-44 rounded-full bg-[rgba(109,211,255,0.16)] blur-3xl"
+	></div>
+
 	<slot />
 </div>
-
-<style>
-	:global(html) {
-		color-scheme: light;
-	}
-
-	:global(body) {
-		margin: 0;
-		font-family:
-			Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-		background:
-			radial-gradient(circle at top, rgba(78, 205, 196, 0.12), transparent 35%),
-			linear-gradient(180deg, #ffffff 0%, #f4f7fb 100%);
-		color: #0f1c2e;
-		min-height: 100vh;
-	}
-
-	.app-shell {
-		min-height: 100vh;
-	}
-</style>

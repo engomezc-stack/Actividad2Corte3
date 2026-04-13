@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+	--font-sans: "Segoe UI", "SF Pro Display", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+	html {
+		color-scheme: light;
+	}
+
+	body {
+		min-height: 100vh;
+		margin: 0;
+		background:
+			radial-gradient(circle at top, rgba(255, 255, 255, 0.95) 0%, rgba(231, 239, 255, 0.88) 28%, transparent 54%),
+			radial-gradient(circle at 85% 18%, rgba(109, 211, 255, 0.18), transparent 22%),
+			linear-gradient(180deg, #f8fbff 0%, #edf3ff 52%, #eaf0fb 100%);
+		background-attachment: fixed;
+		color: #10233f;
+		font-family: var(--font-sans);
+	}
+}
